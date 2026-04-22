@@ -56,4 +56,9 @@ This tutorial outlines the prerequisites and installation of an open-source help
 <p>That test consist in going to the <code>127.0.0.1</code> address in your browser, when you do that something like this should show up</p>
 <img src="https://i.imgur.com/jErzqYk.png"  height="35%" width="35%"/>
 <p>the <code>127.0.0.1</code> is the loop back address, and its porpuse its to ping to the vm itself, thus to test whether the server within our vm has been created and its hosting a webpage the best way to go about it is to actually try to connect to that webpage using the aforementioned address through the browser</p>
-<p>webpages, of course, run with code normally some convination </p>
+<p>webpages usually run with code, normally some convination of: html, css, javascript</p>
+<p>The webpage the we are now selfhosting is no exception it also runs using code and we can actually see that code if we go to <code>C:\inetpub\wwwroot</code></p>
+<img src="https://i.imgur.com/oCKY3Gx.png"  height="35%" width="35%"/>
+<p>Importantlly, we can not only observe this code. We can actually modify it to turn our self hosted webpage into a totally different webpage.</p> 
+<p>And that is exactly what we will be doing to install ostickets, to install ostickets we need to completly rework our defoult selfhosted webpage into a functioning selfhosted ticketing system/webpage.</p>
+<p>And in the following steps i will show how, and the reasoning for every step</p>
