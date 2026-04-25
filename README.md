@@ -65,7 +65,28 @@ This tutorial outlines the prerequisites and installation of an open-source help
 
 <h3>PHP configurartion</h3>
 <p>php is a programing language primarly used in webpage development.</p>
-<p>This is the language that osticket uses; thus, we are required to install it and to configure our iis server to use it.</p>
+<p>php is the language that osticket is programmed in; thus, we are required to install it and to configure our iis server to use it before we can use ostickets.</p>
 
-<p>To use php within our iis webpage we firstlly need to run <code>php manager for iis</code></p>
-<p><code>php manager for iis</code> is a managing tool that allows us </p>
+<p>to install php we firslly have to extract the <code>php zip</code> which contains all the files necesarry for the language to be run</p>
+<img src="https://i.imgur.com/HHmJDkN.png"  height="25%" width="25%"/>
+
+<p>then we need to create a folder to place those files</p>
+<p>for this we need to go to <code>C:\</code> and create a folder called php</p>
+<img src="https://i.imgur.com/LFJlr5r.png"  height="25%" width="25%"/>
+
+<p>and then we have to copy all of our php files to that folder</p>
+
+<p>And with that we will have all the files that php needs ready to go</p>
+<br>
+<br>
+<p>Now how iis works is that our iis server whenever it needs to read php files it will try to look for some executable that i can read to know how to processs those files, right now even though those files exist within our vm our iis server doesnt know where to find them</p>
+<p>to solve that we need to register a new php version</p>
+<p>but iis doesnt have a native function that allow us to do it, thats why we need to run <code>php manager for iis</code> this is a tool that will create the option to register php versions</p>
+<img src="https://i.imgur.com/dGq6emB.png"  height="25%" width="25%"/>
+
+<p>Once thats finished we can go to our iis managment console, and we should see a <code>php manager</code> option</p>
+<img src="https://i.imgur.com/82etMyo.png"  height="25%" width="25%"/>
+<p>that is the option we just created by running <code>php manager for iis</code></p>
+
+<p>after that whole process we can finally register our new php version by clicking the aforementioned option and just clicking the register a new php version button and then just opening the <code>php-cgi.exe</code> from the php folder we previously created at <code>C:\php</code></p>
+<img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
